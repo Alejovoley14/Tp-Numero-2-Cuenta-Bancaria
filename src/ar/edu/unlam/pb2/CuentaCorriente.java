@@ -2,8 +2,8 @@ package ar.edu.unlam.pb2;
 
 public class CuentaCorriente  extends CuentaSueldo{
 	
-	private  Double SOBREGIRO = 500.0;
-	private  Double COMISION = 0.05;
+	private  Double sobregiro = 500.0;
+	private  Double comision = 0.05;
 	
 	private Double montoBanco = null;
 	
@@ -15,8 +15,8 @@ public class CuentaCorriente  extends CuentaSueldo{
 		else if (this.getSaldo() < monto)
 			montoBanco = (monto - this.getSaldo());	
 		
-		if (montoBanco > SOBREGIRO) 
-			this.setSaldo(montoBanco * COMISION);
+		if (montoBanco > sobregiro) 
+			this.setSaldo(montoBanco * comision);
 		
 		else
 			this.setSaldo(montoBanco);

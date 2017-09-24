@@ -10,12 +10,12 @@ public class TestParaCuentaAhorro {
 	public void TestCuentaAhorroExtraer() {
 		CuentaAhorro CuentaAhorro = new CuentaAhorro();
 		
-		CuentaAhorro .setSaldo(2000.0);
-		CuentaAhorro .extraerSaldoCuenta(100.0);
-		CuentaAhorro .extraerSaldoCuenta(100.0);
-		CuentaAhorro .extraerSaldoCuenta(100.0);
-		CuentaAhorro .extraerSaldoCuenta(100.0);
-		CuentaAhorro .extraerSaldoCuenta(100.0);
+		CuentaAhorro.setSaldo(2000.0);
+		CuentaAhorro.extraerSaldoCuenta(100.0);
+		CuentaAhorro.extraerSaldoCuenta(100.0);
+		CuentaAhorro.extraerSaldoCuenta(100.0);
+		CuentaAhorro.extraerSaldoCuenta(100.0);
+		CuentaAhorro.extraerSaldoCuenta(100.0);
 		
 		//luego de la quinta extraccion se adicionan 6 pesos
 		CuentaAhorro .extraerSaldoCuenta(100.0);
@@ -27,7 +27,7 @@ public class TestParaCuentaAhorro {
 		CuentaAhorro CuentaAhorro = new CuentaAhorro();
 		
 		CuentaAhorro .setSaldo(2000.0);
-		CuentaAhorro .depositarSaldo(100.0);
+		CuentaAhorro .depositarSaldoCuenta(100.0);
 		assertEquals(2100.0,CuentaAhorro.getSaldo(), 0.01);
 	}
 }

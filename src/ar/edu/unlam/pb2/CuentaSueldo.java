@@ -12,14 +12,14 @@ public class CuentaSueldo {
 			return this.saldo;
 		}
 		
-		public void extraerSaldo(Double monto) {
+		public void extraerSaldoCuenta (Double monto) {
 			if (this.saldo >= monto)
 				this.saldo = this.saldo - monto;
 			else
 				System.out.println("El monto de Extraccion es mayor al que usted posee en su cuenta");
 		}
 		
-		public void depositarSaldo(Double monto) {
+		public void depositarSaldoCuenta (Double monto) {
 				this.saldo = this.saldo + monto;
 			}
 }

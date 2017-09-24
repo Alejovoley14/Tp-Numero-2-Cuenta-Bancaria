@@ -13,14 +13,14 @@ public class CuentaAhorro extends CuentaSueldo{
 		this.cantDeExtacciones++;
 	}
 	
-	public void extraerSaldoCuenta(Double monto) {
+	public void extraerSaldoCuenta (Double monto) {
 		
 		if (this.saldo >= monto){
 			if(getCantDeExtacciones() >= 5)
 				this.setSaldo(this.getSaldo() - (monto + this.montoExtra));
 			
 			else {
-				extraerSaldo(monto);
+				extraerSaldoCuenta(monto);
 				this.setCantDeExtacciones();
 			}
 		}
@@ -28,7 +28,7 @@ public class CuentaAhorro extends CuentaSueldo{
 			System.out.println("El monto de Extraccion es mayor al que usted posee en su cuenta");
 	
 		}
-	public void depositarSaldo(Double monto) {
+	public void depositarSaldoCuenta (Double monto) {
 		this.saldo = this.saldo + monto;
 	}
 }
